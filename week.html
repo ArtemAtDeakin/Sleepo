@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Statistics - Sleepo</title>
+</head>
+<div class="header">
+    <div class="navbar">
+    <img src="images/logo.png" class="logo" alt="Sleepo">
+    <nav>
+        <ul class="menulist" id="menulist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="week.html"><u>Weekly Statisctics</u></a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" class="menu_icon" alt="Menu"
+    onclick="togglemenu()">
+    </div>
+  </div>
+<body class="body-style">
+
+
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td style="width: 251.5px; background-color: #4472c4; text-align: center;">&nbsp;
+                    <b class="table-heading">Monday</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 251.5px; background-color: #8eaadb; text-align: center;">&nbsp;
+                    
+                    <table style="width: 100%;">
+                        <tbody>
+                        <tr>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="mondaysleep" class="weektext"></b>
+                        </td>
+                        <td style="width: 50%;">&nbsp;
+                        <img src="images/line.png" width=100% style="margin-bottom:20px" alt="">
+                        </td>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="mondaywoke" class="weektext"></b>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td style="width: 251.5px; background-color: #4472c4; text-align: center;">&nbsp;
+                    <b class="table-heading">Tuesday</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 251.5px; background-color: #8eaadb; text-align: center;">&nbsp;
+                    
+                    <table style="width: 100%;">
+                        <tbody>
+                        <tr>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="tuesdaysleep" class="weektext"></b>
+                        </td>
+                        <td style="width: 50%;">&nbsp;
+                        <img src="images/line.png" width=100% style="margin-bottom:20px" alt="">
+                        </td>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="tuesdaywoke" class="weektext"></b>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td style="width: 251.5px; background-color: #4472c4; text-align: center;">&nbsp;
+                    <b class="table-heading">Wednesday</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 251.5px; background-color: #8eaadb; text-align: center;">&nbsp;
+                    
+                    <table style="width: 100%;">
+                        <tbody>
+                        <tr>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="wednesdaysleep" class="weektext"></b>
+                        </td>
+                        <td style="width: 50%;">&nbsp;
+                        <img src="images/line.png" width=100% style="margin-bottom:20px" alt="">
+                        </td>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="wednesdaywoke" class="weektext"></b>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td style="width: 251.5px; background-color: #4472c4; text-align: center;">&nbsp;
+                    <b class="table-heading">Thursday</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 251.5px; background-color: #8eaadb; text-align: center;">&nbsp;
+                    
+                    <table style="width: 100%;">
+                        <tbody>
+                        <tr>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="thursdaysleep" class="weektext"></b>
+                        </td>
+                        <td style="width: 50%;">&nbsp;
+                        <img src="images/line.png" width=100% style="margin-bottom:20px" alt="">
+                        </td>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="thursdaywoke" class="weektext"></b>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td style="width: 251.5px; background-color: #4472c4; text-align: center;">&nbsp;
+                    <b class="table-heading">Friday</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 251.5px; background-color: #8eaadb; text-align: center;">&nbsp;
+                    
+                    <table style="width: 100%;">
+                        <tbody>
+                        <tr>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="fridaysleep" class="weektext"></b>
+                        </td>
+                        <td style="width: 50%;">&nbsp;
+                        <img src="images/line.png" width=100% style="margin-bottom:20px" alt="">
+                        </td>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="fridaywoke" class="weektext"></b>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td style="width: 251.5px; background-color: #4472c4; text-align: center;">&nbsp;
+                    <b class="table-heading">Saturday</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 251.5px; background-color: #8eaadb; text-align: center;">&nbsp;
+                    
+                    <table style="width: 100%;">
+                        <tbody>
+                        <tr>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="saturdaysleep" class="weektext"></b>
+                        </td>
+                        <td style="width: 50%;">&nbsp;
+                        <img src="images/line.png" width=100% style="margin-bottom:20px" alt="">
+                        </td>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="saturdaywoke" class="weektext"></b>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="main-table" style="margin-bottom:20px">
+        <tbody>
+            <tr>
+                <td style="width: 251.5px; background-color: #4472c4; text-align: center;">&nbsp;
+                    <b class="table-heading">Sunday</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 251.5px; background-color: #8eaadb; text-align: center;">&nbsp;
+                    
+                    <table style="width: 100%;">
+                        <tbody>
+                        <tr>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="sundaysleep" class="weektext"></b>
+                        </td>
+                        <td style="width: 50%;">&nbsp;
+                        <img src="images/line.png" width=100% style="margin-bottom:20px" alt="">
+                        </td>
+                        <td style="width: 25%;">&nbsp;
+                        <b id="sundaywoke" class="weektext"></b>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="scripts.js"></script>
+
+    <script>
+        document.getElementById("mondaysleep").innerHTML = weeklybed(1);
+        document.getElementById("tuesdaysleep").innerHTML = weeklybed(2);
+        document.getElementById("wednesdaysleep").innerHTML = weeklybed(3);
+        document.getElementById("thursdaysleep").innerHTML = weeklybed(4);
+        document.getElementById("fridaysleep").innerHTML = weeklybed(5);
+        document.getElementById("saturdaysleep").innerHTML = weeklybed(6);
+        document.getElementById("sundaysleep").innerHTML = weeklybed(0);
+
+        document.getElementById("mondaywoke").innerHTML = weeklywoke(1);
+        document.getElementById("tuesdaywoke").innerHTML = weeklywoke(2);
+        document.getElementById("wednesdaywoke").innerHTML = weeklywoke(3);
+        document.getElementById("thursdaywoke").innerHTML = weeklywoke(4);
+        document.getElementById("fridaywoke").innerHTML = weeklywoke(5);
+        document.getElementById("saturdaywoke").innerHTML = weeklywoke(6);
+        document.getElementById("sundaywoke").innerHTML = weeklywoke(0);
+    </script>
+
+</body>
+</html>

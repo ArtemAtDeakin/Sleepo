@@ -1,0 +1,155 @@
+/* Styling for the header */
+.header {
+    padding: 10px;
+    text-align: left;
+    background: #4472c4;
+    color: black;
+    font-size: 30px;
+    overflow: hidden;
+  }
+
+  .navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+/* Sets the width for the logo in header */
+  .logo{
+    width: 300px;
+  }
+/* Sets the width of the menu icon and hides it when loaded in desktop view */
+  .menu_icon{
+    width: 25px;
+    display: none;
+  }
+/* Formats text in menu */
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: arial;
+  }
+/* Changes text colour on mouse hover */
+  nav ul li a:hover{
+    color: #0d294e;
+  }
+/* Formates the background of the website */
+  .body-style{
+    background-color:#b4c6e7;
+    margin: 0px;
+  }
+
+/* The following CSS outlines the design principles of the tables that the website contains */
+  .main-table{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .second-table{
+    width: 100%;
+    overflow: hidden;
+  }
+/* Formating of the headings for each table */
+  .table-heading{
+    width: 100%;
+    font-family: arial;
+    font-size: 20px; 
+    text-align: center;
+  }
+/* Formating for regular type of text */
+  .reg-text{
+    display: inline-block;
+    font-family: arial;
+    font-size: 20px;
+    margin: 0;
+  }
+/* Formating of the input boxes */
+  .time-input{
+    font-family: arial;
+    font-size: 20px;
+    width: 180px;
+    background-color: #4472c4;
+  }
+/* Formating of the submit button */
+  .submit{
+    font-family: arial;
+    font-size: 20px;
+    background-color: #4472c4;
+    text-align: center;
+    
+  }
+/* Formating of the smaller text */
+  .minitext{
+    font-family: arial; 
+    font-size: 15px; 
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+/* Fomrating of the time displayed on weekly page */
+  .weektext{
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+/* The following styling will be applied when the width of the screen is less than 700px (mobile view) */
+  @media only screen and (max-width:700px){
+/* Makes the logo smaller */
+    .logo{
+        width: 150px;
+    }
+    /* Changes menu formatting for mobile */
+    nav ul{
+        width: 100%;
+        background-color: #8eaadb;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        margin-top: 13px;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+/* Displays the menu icon */
+    .menu_icon{
+        margin-right: 25px;
+        display: block;
+    }
+/* Changes table formatting for mobile */
+    .main-table{
+        width: 100%;
+    }
+
+    .second-table{
+        width: 100%;
+    }
+
+    .menulist{
+        display: none;
+    }
+
+
+
+  }

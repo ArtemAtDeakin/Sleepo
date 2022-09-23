@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sleepo</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+
+<!-- Script that adds user input data and manipulates it -->
+    <script>
+             function addsleep(){
+                var bedtime = document.getElementById("bedtime");
+                var woketime = document.getElementById("woketime");
+                
+                if(bedtime.value != "" & woketime.value != "")
+          {
+            bedtime.style.backgroundColor = "#4472c4";
+            woketime.style.backgroundColor = "#4472c4";
+            // Adds user input data to array
+            addbedtime();
+            addwoketime();
+            addday();
+            // Disables Submit button
+            submit.disabled = true;
+            // Adds comparison data to site
+            document.getElementById("datka1").innerHTML = "You spent " + calcyou(bedtime.value,woketime.value) + 
+            " sleeping. On average users have spent " + calcdif(avgsleep(),avgwoke()) + " sleeping.";
+            document.getElementById("datka2").innerHTML = "You went to bed at " + bedtime.value + 
+            ". On average users have gone to bed at " + timeconvert(avgsleep()) + ".";
+            document.getElementById("datka3").innerHTML = "You woke up at " + woketime.value + 
+            ". On average users woke up at " + timeconvert(avgwoke()) + ".";
+          }
+          else
+         {
+            //If the user hasn't input all the data, the boxes will turn red
+            bedtime.style.backgroundColor = "red";
+            woketime.style.backgroundColor = "red";
+         }
+ }
+        
+     
+    </script>
+</head>
+<div class="header">
+    <div class="navbar">
+    <img src="images/logo.png" class="logo" alt="Sleepo">
+    <nav>
+        <ul class="menulist" id="menulist">
+            <!-- Menu with underlined current page -->
+            <li><a href="index.html"><u>Home</u></a></li>
+            <li><a href="week.html">Weekly Statisctics</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" class="menu_icon" alt="Menu"
+    onclick="togglemenu()">
+    </div>
+  </div>
+<body class="body-style">
+    <!-- Table that contains user input -->
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td style="width: 251.5px; background-color: #4472c4; text-align: center;">&nbsp;
+                    <b class="table-heading">Your sleep information</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 251.5px; background-color: #8eaadb; text-align: center;">&nbsp;
+
+                    <table class="second-table">
+                        <tbody>
+                            <tr>
+                                <td style="width: 15.5px; overflow: hidden">&nbsp;
+                                    <label class="reg-text "for="bedtime">Went to bed:</label>
+                                    <input class="time-input" type="time" id="bedtime" name="bedtime">
+                                </td>
+                                <td style="width: 14.5px;">&nbsp;
+                                    <label class="reg-text "for="woketime">Woke up:</label>
+                                    <input class="time-input" type="time" id="woketime" name="woketime">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="submit" style="margin:10px" type="button" onclick="addsleep()" id = "submit">Submit</button>
+                    <p class="minitext">By clicking 'Submit', you agree to your data being anonymously embedded into statistics on this website</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table that contains data comparison -->
+    <table class="main-table">
+        <tbody>
+            <tr>
+                <td style="width: 251.5px; background-color: #4472c4; text-align: center;">&nbsp;
+                    <b class="table-heading">Your sleep compared to others</b>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 251.5px; background-color: #8eaadb;">&nbsp;
+<!-- Text will only appear after the user clicks submit -->
+                    <p class="minitext" id="datka1">Data comparison will appear here once you've entered your data and pressed 'Submit'</p>
+                    <p class="minitext" id="datka2"></p>
+                    <p class="minitext" id="datka3"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="scripts.js">
+    </script>
+</body>
+</html>
